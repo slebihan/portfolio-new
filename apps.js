@@ -27,6 +27,7 @@ const main = document.getElementById('main')
 const competences = document.getElementById('competences')
 const frontend = document.getElementById('frontend')
 const backend = document.getElementById('backend')
+const background = document.querySelector('.back-container')
 
 // var cursor = document.getElementById("cursor");
 // document.body.addEventListener("mousemove", function(e) {
@@ -34,7 +35,8 @@ const backend = document.getElementById('backend')
 //     cursor.style.top = e.clientY + "px";
 // });
 
-var x = window.matchMedia("(max-width: 768px)")
+var x = window.matchMedia("(min-width: 768px)")
+var y = window.matchMedia("(max-width:992px)")
 
 button.addEventListener('click',function(){
     frontend.classList.toggle('animateFront')
@@ -48,10 +50,10 @@ elements.addEventListener('click', function(){
         element.classList.toggle('black')
         elementNav.classList.toggle('isOpen')
         
-        if(x.matches){
+        if(x.matches && y.matches){
             main.classList.toggle('marginLeft')
+            background.classList.toggle('marginLeftBack')
         }
-        main.classList.toggle('marginLeft')
     })
 })
 

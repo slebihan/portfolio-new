@@ -42,24 +42,28 @@ table{
 /* HEADER */
 
 #background{
-  background-image: url(./diana-serbichenko-kE0AXiJ-PIA-unsplash.jpeg);
+  background-image: url(./images/photo-1532710534137-ae0da83eb118.avif);
   height: 40vh;
   width: 100vw;
   background-attachment: fixed;
   background-position:left;
   background-size: cover;
-  filter:opacity(0.3);
+  /* filter:opacity(0.3); */
+  position: relative;
 }
 
 .name{
   position: absolute;
-  left: 40%;
+  left: 30%;
   text-align: center;
   top: 40px;
   font-family: saithik handwritten;
   font-size: 22px;
   display: flex;
   flex-wrap: wrap;
+}
+h1{
+  margin: 0px;
 }
 
 .ellipse{
@@ -69,6 +73,7 @@ table{
   height: 80px;
   width: 100%;
   bottom: 0;
+  border-top: 5px solid black;
 }
 /* END HEADER */
 
@@ -361,6 +366,8 @@ table{
 
 
 .item-project{
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -405,7 +412,7 @@ table{
 #ohmyfood{
   width: 100%;
   height: 100%;
-  background: url(./ohmyfood.png);
+  background: url(./images/ohmyfood.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -423,7 +430,7 @@ table{
 #booki{
   width: 100%;
   height: 100%;
-  background: url(./booki.png);
+  background: url(./images/booki.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -442,7 +449,7 @@ table{
 #groupomania{
   width: 100%;
   height: 100%;
-  background: url(./groupomania.png);
+  background: url(./images/groupomania.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -466,7 +473,7 @@ table{
 #kanap{
   width: 100%;
   height: 100%;
-  background: url(./Kanap.png);
+  background: url(./images/Kanap.png);
   background-size:cover;
   background-repeat: no-repeat;
 }
@@ -484,7 +491,7 @@ table{
 #piiquante{
   width: 100%;
   height: 100%;
-  background: url(./piiquante-resize.png);
+  background: url(./images/piiquante-resize.png);
   background-size:cover;
   
 }
@@ -529,13 +536,14 @@ table{
     width: 80%;
   }
   .item-project{
-    width: 90%;
+    width: 80%;
   }
   .flex-container{
+    display: flex;
     width: 100%;
   }
   .image-box{
-    width: 100%;
+    width: 80%;
   }
 
   /* .circle-menu.circle-anim{
@@ -592,7 +600,7 @@ table{
   }
   .flex-container{
     display: flex;
-    width: 100%;
+    width: 80%;
   }
   .image-box{
     width: 100%;
