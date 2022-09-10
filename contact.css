@@ -35,35 +35,44 @@ table{
     border-spacing: 0;
 }
 
-.name{
-    position: absolute;
-    left: 40%;
-    text-align: center;
-    top: 40px;
-    font-family: saithik handwritten;
-    font-size: 22px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+.name {
+  left: 30%;
+  text-align: center;
+  font-family: saithik handwritten;
+  font-size: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+h1{
+  margin: 0px;
+}
   #background{
-    background-image: url(./diana-serbichenko-kE0AXiJ-PIA-unsplash.jpeg);
+    background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.jpeg);
     height: 40vh;
     width: 100vw;
     background-attachment: fixed;
     background-position:left;
     background-size: cover;
-    filter:opacity(0.3);
+    /* filter:opacity(0.3); */
+    position: relative;
+  }
+  .back-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
   }
 
   
-  .ellipse{
+  .ellipse {
     position: absolute;
-    border-radius: 50%/100px 100px 0 0;
+    border-radius: 50%/100px 100px 0 0; 
     background-color: antiquewhite;
     height: 80px;
     width: 100%;
     bottom: -1px;
+    border-top: 5px solid black;
   }
 
 /* MENU */
@@ -326,9 +335,17 @@ table{
   }
 @media screen and (max-width:768px){
 
-    .name{
-        left: 30%;
-      }
+  .back-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name{
+    font-size: 17px;
+    left: 30%;
+    margin-left:0px;  
+  }
+
 
     .navigation.isOpen {
         background-color: rgba(0, 0, 0, 0.9);

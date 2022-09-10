@@ -146,7 +146,7 @@ h1{
 }
 
 #background {
-  background-image: url(./images/photo-1532710534137-ae0da83eb118.avif);
+  background-image: url(./images/pawel-czerwinski-OG44d93iNJk-unsplash.jpeg);
   /* background-color: #dbe0d9; */
   position: relative;
   height: 40vh;
@@ -427,7 +427,6 @@ hr {
   .back-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
 

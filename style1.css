@@ -38,11 +38,14 @@ table{
 .marginLeft{
   margin-left: 50px;
 }
+.marginLeftBack{
+  margin-left: 100px;
+}
 
 /* HEADER */
 
 #background{
-  background-image: url(./images/photo-1532710534137-ae0da83eb118.avif);
+  background-image: url(./images/wesley-tingey-KrQkCVZO1BI-unsplash.jpeg);
   height: 40vh;
   width: 100vw;
   background-attachment: fixed;
@@ -51,16 +54,21 @@ table{
   /* filter:opacity(0.3); */
   position: relative;
 }
+.back-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
 
 .name{
-  position: absolute;
   left: 30%;
   text-align: center;
-  top: 40px;
   font-family: saithik handwritten;
   font-size: 22px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
 }
 h1{
   margin: 0px;
@@ -366,8 +374,7 @@ h1{
 
 
 .item-project{
-  display: flex;
-  justify-content: center;
+  
   width: 100%;
 }
 
@@ -524,8 +531,11 @@ h1{
 
 #footer{
   text-align: center;
-  background-color: black;
-  color: antiquewhite;
+  background-image: url(./images/wesley-tingey-KrQkCVZO1BI-unsplash.jpeg);
+  /* background-color: black; */
+  /* color: antiquewhite; */
+  color: black;
+  font-weight: bold;
   width: 100%;
   padding: 20px 0px 20px 0px;
 }
@@ -554,8 +564,16 @@ h1{
 
 @media screen and (max-width:768px){
 
+  .back-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .name{
+    font-size: 17px;
     left: 30%;
+    margin-left:0px;  
   }
 
   /* .circle-menu.circle-anim{
@@ -600,7 +618,7 @@ h1{
   }
   .flex-container{
     display: flex;
-    width: 80%;
+    width: 100%;
   }
   .image-box{
     width: 100%;
