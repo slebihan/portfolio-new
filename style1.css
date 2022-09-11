@@ -552,15 +552,11 @@ hr{
   #main{
     width: 80%;
   }
-  .item-project{
-    width: 80%;
-  }
   .flex-container{
-    display: flex;
     width: 100%;
   }
   .image-box{
-    width: 80%;
+    width: 100%;
   }
 
   /* .circle-menu.circle-anim{
