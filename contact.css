@@ -328,10 +328,10 @@ h1{
   }
   .bloc-mail{
     width: 35%;
-    background-color: #7095b2;
+    background-color:  #a1d1dd;
     padding: 20px;
     border-radius: 30px;
-    color: white;
+    color: black;
     font-weight: bold;
     line-height: 40px;
     margin-bottom: 30px;
@@ -432,8 +432,8 @@ h1{
   }
 
   #footer{
-    background: black;
-    color: antiquewhite;
+    background: #51acc0;    ;
+    color: black;
     width: 100%;
     bottom: 0;
     z-index: -1;

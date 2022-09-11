@@ -372,7 +372,15 @@ h1{
 
 /* END MENU MOBILE V1 */
 
-
+.description{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+  width: 70%;
+}
+hr{
+  border-top: 2px solid black;
+}
 .item-project{
   
   width: 100%;
@@ -531,8 +539,7 @@ h1{
 
 #footer{
   text-align: center;
-  background-image: url(./images/wesley-tingey-KrQkCVZO1BI-unsplash.jpeg);
-  /* background-color: black; */
+  background-color: #ce9c7d;
   /* color: antiquewhite; */
   color: black;
   font-weight: bold;
