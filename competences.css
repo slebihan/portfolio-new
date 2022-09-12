@@ -146,15 +146,13 @@ h1{
 }
 
 #background {
-  background-image: url(./images/pawel-czerwinski-OG44d93iNJk-unsplash.jpeg);
-  /* background-color: #dbe0d9; */
+  background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.jpeg);
   position: relative;
   height: 40vh;
   width: 100vw;
   background-attachment: fixed;
   background-position: left;
   background-size: cover;
-  /* filter: opacity(0.3); */
 }
 .back-container{
   display: flex;
