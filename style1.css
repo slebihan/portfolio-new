@@ -80,7 +80,7 @@ h1{
   background-color: antiquewhite;
   height: 80px;
   width: 100%;
-  bottom: 0;
+  bottom: -1px;
   border-top: 5px solid black;
 }
 /* END HEADER */
@@ -528,9 +528,10 @@ hr{
 .text p{
   margin: 30px 30px;
 }
+
 .image-box .overlay .text ul.infos{
   overflow: auto;
-  height: 200px;
+  height: 170px;
   padding: 0px 30px 0px 30px;
   font-size: 14px;
   text-align: left;
@@ -650,4 +651,91 @@ hr{
   100% {
     opacity: 1;
   }
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-button{
+  /* padding: 10px 15px; */
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-family: "Comfortaa";
+	background: #b6604f;
+	color: #f1f1f1;
+	font-size: 16px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 800;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: inline-flex;
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px; /* Could be more or less, depending on screen size */
+  height: 70%;
+}
+.modal-content-text{
+  text-align: center;
+  width: 100%;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  height: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-items {
+  height: 80%;
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+}
+.carousel-item {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* flex-basis: 450px; */
+  margin-left: 1rem;
+}
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+}
+.carousel-items::-webkit-scrollbar{
+  height: 6px;
+  width: 4px;
+  background:#ccc8c8;
+}
+.carousel-items::-webkit-scrollbar-thumb:horizontal{
+  background: gray;
+  border-radius: 10px;
 }
