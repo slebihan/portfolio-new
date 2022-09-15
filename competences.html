@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./competences.css" />
     <link
       rel="stylesheet"
@@ -11,24 +12,64 @@
     />
 
     <title>Competences</title>
+    <meta name="description" content="En recherche active à Paris (junior) - Poste de développeur ou intégrateur  ">
   </head>
   <body>
-    <div id="anim"></div>
+    <!-- <div id="anim"></div>
     <div id="anim-2"></div>
 
-    <button id="button" type="button" onclick="animation()">Découvrir</button>
+    <button id="button" type="button" onclick="animation()">Découvrir</button> -->
 
-    <div id="home-container">
+   
       <header>
         <div id="background">
-          <div class="ellipse"></div>
-        </div>
-        <div class="name">
-          <h1>Stéphanie Le Bihan</h1>
-        </div>
-      </header>
 
-      <div class="circle-menu circle-anim">
+          <div class="back-container">
+          <div class="logo">
+            <picture>
+        
+              
+              <source srcset="images/Lotus-Flower-200w.png"
+                      media="(min-width: 768px)">
+            
+                      
+              <img src="images/Lotus-Flower-100w.png" alt=""> 
+             
+              
+          </picture>
+
+    
+          </div>
+          <div class="name">
+          <h1>Stéphanie Le Bihan</h1>
+          </div>
+          </div>
+
+        <div class="ellipse"></div>
+        </div>
+    
+      </header>
+      <!-- <div class="menu hide">
+        <ul>
+            <li>
+                <a href="./index.html">
+                Compétences
+                </a>
+            </li>
+            <li>
+                <a href="./portfolio.html">
+                Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                Contact
+                </a>
+            </li>
+        </ul>
+      </div> -->
+
+      <!-- <div class="circle-menu">
         <div class="links-circle">
           <a href="./contact.html">
             <i class="fa-solid fa-phone"></i>
@@ -45,15 +86,18 @@
           <i class="fa-solid fa-user-graduate"></i>
         </a>
         </div>
-      </div>
+      </div> -->
       <div class="btn-navigation">
         <div class="barre"></div>
         <div class="barre"></div>
         <div class="barre"></div>
       </div>
-      <div class="navigation isOpen">
+      <div class="navigation">
         <ul>
           <li>
+            <a href="./home.html">
+              <i class="fa-regular fa-house"></i>
+            </a>
             <a href="./competences.html">Compétences</a>
             <a href="./portfolio.html">Portfolio</a>
             <a href="./contact.html">Contact</a>
@@ -61,17 +105,18 @@
         </ul>
       </div>
 
-      <main id="main">
+  
+      <div id="main">
         <!-- competences Section-->
 
         <div id="competences">
-          <div class="competences-item">
-            <h2>Front End</h2>
+          <div class="competences-item" id="frontend">
+            <h2>Frontend</h2>
             <hr />
 
             <div class="frontend-container">
               <div class="icon-container react">
-                <img src="./1631110818-logo-react-js.png" alt="">
+                <img src="./images/1631110818-logo-react-js.png" alt="logo-react">
               </div>
               <div class="icon-container">
                 <i class="fa-brands fa-html5"></i>
@@ -93,7 +138,7 @@
             </div>
           </div>
 
-          <div class="competences-item">
+          <div class="competences-item" id="backend">
             <h2>Backend</h2>
             <hr />
 
@@ -105,10 +150,10 @@
                 <i class="fa-brands fa-js"></i>
               </div>
               <div class="icon-container mysql">
-                <img src="./logo-mysql-170x115.png" alt="" />
+                <img src="./images/logo-mysql-170x115.png" alt="logo mysql" />
               </div>
               <div class="icon-container mongodb">
-                <img src="./1_Y6USBdJWvRYVyDPh8fF7_A.png" alt="" />
+                <img src="./images/logo-mongo.png" alt="logo mongoDB" />
               </div>
               <div class="icon-container">
                 <i class="fa-brands fa-github"></i>
@@ -120,7 +165,7 @@
         <!-- End competences Section-->
 
       
-      </main>
+      </div>
       <!-- footer Section -->
       <footer id="footer">
         <div class="footer-container">
@@ -128,7 +173,7 @@
         </div>
       </footer>
       <!-- End footer Section -->
-    </div>
+   
 
     <script src="./apps.js"></script>
   </body>

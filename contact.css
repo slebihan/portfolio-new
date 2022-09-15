@@ -21,6 +21,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display: block;
 }
 body{
+  display: flex;
   flex-direction: column;
   background:#faebd7;
   min-height: 100vh;
@@ -85,6 +86,7 @@ h1{
 /* MENU */
 
 #main {
+  flex-grow: 1;
     transition: all 0.3s ease;
   }
   
@@ -432,11 +434,9 @@ h1{
   }
 
   #footer{
-    background: #51acc0;    ;
+    background: #51acc0;
     color: black;
     width: 100%;
-    bottom: 0;
-    z-index: -1;
     text-align: center;
     padding: 20px 0px 20px 0px;
   }

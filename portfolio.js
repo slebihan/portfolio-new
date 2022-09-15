@@ -62,8 +62,16 @@ elements.addEventListener('click', function(){
 })
 
 
+//  window.onresize = function() {    
+//         var widthWin = window.document.body.clientWidth;
+//         console.log(widthWin); 
+                
+//     }
+
+var mobile = window.matchMedia("(min-width: 768px)");
+
 // Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
+var btn = document.querySelectorAll("button.modal-button-large");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');
@@ -74,9 +82,15 @@ var spans = document.getElementsByClassName("close");
 // When the user clicks the button, open the modal
 for (var i = 0; i < btn.length; i++) {
  btn[i].onclick = function(e) {
+    const modal = document.querySelector(e.target.getAttribute("href"));
+    if(mobile.matches){
     e.preventDefault();
     const modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
+    }
+    else(
+        modal.style.display ="none"
+    )
  }
 }
 
