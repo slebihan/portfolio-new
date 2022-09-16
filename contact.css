@@ -86,7 +86,7 @@ h1{
 /* MENU */
 
 #main {
-  flex-grow: 1;
+    flex-grow: 1;
     transition: all 0.3s ease;
   }
   
