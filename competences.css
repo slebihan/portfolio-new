@@ -396,6 +396,7 @@ h3{
   }
   ul{
     list-style: circle;
+    padding: 0px;
   }
   .item-text{
     width: 50%;
