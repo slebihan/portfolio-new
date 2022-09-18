@@ -5,16 +5,14 @@
 //     });
 // });
 
-
-var elements = document.querySelector('.btn-navigation');
-var element = document.querySelectorAll('.barre')
-var elementNav = document.querySelector(".navigation")
+var elements = document.querySelector(".btn-navigation");
+var element = document.querySelectorAll(".barre");
+var elementNav = document.querySelector(".navigation");
 // const circleMenu = document.querySelector('.circle-menu')
 // const circleAnim = document.querySelector('.circle-anim')
-const main = document.getElementById('main')
-const competences = document.getElementById('competences')
-const frontend = document.getElementById('frontend')
-const backend = document.getElementById('backend')
+const main = document.getElementById("main");
+const competences = document.getElementById("competences");
+const background = document.querySelector(".back-container");
 
 // var cursor = document.getElementById("cursor");
 // document.body.addEventListener("mousemove", function(e) {
@@ -22,28 +20,21 @@ const backend = document.getElementById('backend')
 //     cursor.style.top = e.clientY + "px";
 // });
 
-var x = window.matchMedia("(min-width: 768px)")
-var y = window.matchMedia("(max-width:992px)")
+var x = window.matchMedia("(min-width: 768px)");
+var y = window.matchMedia("(max-width:992px)");
 
-// button.addEventListener('click',function(){
-//     frontend.classList.toggle('animateFront')
-//     backend.classList.toggle('animateBack')
-// })
+elements.addEventListener("click", function () {
+  element.forEach((element) => {
+    elements.classList.toggle("black");
+    element.classList.toggle("black");
+    elementNav.classList.toggle("isOpen");
 
-elements.addEventListener('click', function(){
-    element.forEach((element)=>{
-
-        elements.classList.toggle('black')        
-        element.classList.toggle('black')
-        elementNav.classList.toggle('isOpen')
-        
-        if(x.matches && y.matches){
-            main.classList.toggle('marginLeft')
-            background.classList.toggle('marginLeftBack')
-        }
-    })
-})
-
+    if (x.matches && y.matches) {
+      main.classList.toggle("marginLeft");
+      background.classList.toggle("marginLeftBack");
+    }
+  });
+});
 
 // elements.addEventListener('click',()=>{
 //     if(x.matches){

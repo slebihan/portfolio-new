@@ -39,17 +39,15 @@ section {
   display: block;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  background: #faebd7;
-  min-height: 100vh;
+body{
+  background:#faebd7;
   margin: 0px;
   font-family: "Comfortaa";
 }
 
 ul {
   list-style: none;
+  margin: 0px;
 }
 
 table {
@@ -116,8 +114,6 @@ h1{
 /* MENU */
 
 #main {
-  /* display: flex;
-  flex-direction: column; */
   transition: all 0.3s ease;
   flex-grow: 1;
   
@@ -291,6 +287,12 @@ ul li a {
 
 /* END MENU MOBILE V1 */
 
+#frontend{
+  animation: fadeInLeft 2s ease;
+}
+#backend{
+  animation: fadeInRight 2s ease;
+}
 
 #competences {
   flex-grow: 1;
@@ -316,8 +318,7 @@ hr {
   position: relative;
   flex-direction: column;
   align-items: center;
-  height: 300px;
-  width: 50%;
+  width: 40%;
   background-color: #faf9f7;
   border-radius: 30px;
   box-shadow: -1px 2px 8px 4px #ccc8c8;
@@ -332,23 +333,37 @@ hr {
   height: 100%;
   align-items: center;
   justify-content: space-around;
+  padding: 15px;
+}
+.item-el{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+.item-text{
+  line-height: 50px;
+}
+h3{
+  font-size: 14px;
+  margin: 0px;
+}
+.item-icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
 }
 
-.icon-container.sass {
-  color: pink;
+.item-icon img,
+.item-icon img {
+  height: 40px;
 }
-.icon-container {
-  font-size: 50px;
-}
-
-.icon-container.react img,
-.icon-container.mysql img {
-  height: 50px;
+.item-icon .mongoDB{
+  height: 60px;
 }
 
-.icon-container.mongodb img {
-  height: 80px;
-}
 
 /* FOOTER */
 
@@ -361,15 +376,41 @@ hr {
 }
 
 /* END FOOTER */
+@media screen and (min-width:550px) and (max-width:768px){
+  .competences-item{
+    width: 70%;
+   height: auto;
+  }
+}
 
-
+@media screen and (max-width: 550px){
+  .frontend-container{
+    flex-direction: column;
+  }
+  .competences-item{
+    height: auto;
+  }
+  .item-el{
+    width: 100%;
+    justify-content: center;
+  }
+  ul{
+    list-style: circle;
+  }
+  .item-text{
+    width: 50%;
+    text-align: center;
+  }
+   .item-icon{
+    display: none;
+  }
+}
 @media screen and (max-width:768px) {
 
   .back-container{
     display: flex;
     flex-direction: column;
   }
-
 
   .name{
     font-size: 17px;
@@ -406,9 +447,6 @@ hr {
     display: none;
   }
 
-  .frontend-container {
-    flex-wrap: wrap;
-  }
 
 }
 @media screen and (min-width: 768px) {
@@ -467,13 +505,6 @@ hr {
   }
 }
 
-.animateFront{
-  animation: fadeInLeft 1s ease;
-}
-.animateBack{
-  animation: fadeInRight 1s ease;
-}
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -500,4 +531,3 @@ hr {
     transform: translate3d(0, 0, 0);
   }
 }
-
