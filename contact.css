@@ -20,13 +20,15 @@ menu,nav,output,ruby,section,summary,time,mark,audio,video{
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display: block;
 }
-body{
-  display: flex;
-  flex-direction: column;
-  background:#faebd7;
-  min-height: 100vh;
-  margin: 0px;
-  font-family: "Comfortaa";
+html,body{
+  height: 100%;
+}
+body {
+    background: #faebd7;
+    margin: 0px;
+    font-family: "Comfortaa";
+    display: flex;
+    flex-direction: column;
 }
 ul{
     list-style: none;
@@ -56,7 +58,7 @@ h1{
   margin: 0px;
 }
   #background{
-    background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.jpeg);
+    background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.avif);
     height: 40vh;
     width: 100vw;
     background-attachment: fixed;
@@ -150,62 +152,6 @@ h1{
   
   }
   
-  /* MENU TABLETTE DESKTOP */
-  
-  .navigation {
-    position: fixed;
-    top: 0px;
-    border-bottom-right-radius: 250px;
-    left: 0;
-    height: 100%;
-    padding: 0px;
-    background-color: #44749a;
-    width: 200px;
-    transition: transform .6S ease-in-out;
-    -webkit-transform: transform .6S ease-in-out;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-  }
-  
-  .navigation.isOpen {
-    transform: translateX(0%);
-    animation-name: fadeIn;
-  }
-  
-  .navigation ul {
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-  }
-  
-  .navigation ul li {
-    margin: 10px;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    height: 290px;
-    justify-content: space-evenly;
-  }
-  
-  ul li a {
-    text-decoration: none;
-  }
-  
-  .navigation ul li a {
-    color: white;
-    text-transform: uppercase;
-    margin: 20px 0;
-    font-size: 20px;
-    letter-spacing: 0.07em;
-    font-weight: 800;
-    text-align: center;
-  }
-  /* END MENU TABLETTE DESKTOP */
-  
   hr {
     border: 2px solid #333;
     color: #333;
@@ -295,10 +241,6 @@ h1{
      top: 40%;
    } */
 
-
-#contact{
-    width: 100%;
-}
 
 .outer-container{
     position: relative;
@@ -434,8 +376,6 @@ h1{
 
   #footer{
     background: #51acc0;
-    color: black;
-    width: 100%;
     text-align: center;
     padding: 20px 0px 20px 0px;
   }

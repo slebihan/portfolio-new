@@ -39,12 +39,14 @@ section {
   display: block;
 }
 
-body{
-  background:#faebd7;
+body {
+  background: #faebd7;
   margin: 0px;
   font-family: "Comfortaa";
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-
 ul {
   list-style: none;
   margin: 0px;
@@ -83,7 +85,7 @@ h1{
 }
 
 #background {
-  background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.jpeg);
+  background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.avif);
   position: relative;
   height: 40vh;
   width: 100vw;
@@ -369,8 +371,6 @@ h3{
 
 #footer{
   background: #51acc0;
-  color: black;
-  width: 100%;
   text-align: center;
   padding: 20px 0px 20px 0px;
 }

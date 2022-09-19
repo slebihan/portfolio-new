@@ -20,10 +20,13 @@ menu,nav,output,ruby,section,summary,time,mark,audio,video{
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display: block;
 }
-body{
-  background:#faebd7;
+body {
+  background: #faebd7;
   margin: 0px;
   font-family: "Comfortaa";
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 ul{
     list-style:disc;
@@ -42,7 +45,7 @@ table{
 /* HEADER */
 
 #background{
-  background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.jpeg);
+  background-image: url(images/resul-mentes-DbwYNr8RPbg-unsplash.avif);
   height: 40vh;
   width: 100vw;
   background-attachment: fixed;
@@ -326,7 +329,7 @@ h1{
 
 /* MENU MOBILE V1 */
 
-.circle-menu {
+/* .circle-menu {
   background: #44749a;
   width: 200px;
   height: 200px;
@@ -365,7 +368,7 @@ h1{
  }
  .links-circle a:focus i, .links-circle a:hover i{
    color: white;
- }
+ } */
 
 /* END MENU MOBILE V1 */
 
@@ -486,7 +489,7 @@ hr{
 #kanap{
   width: 100%;
   height: 100%;
-  background: url(./images/Kanap.png);
+  background: url(./images/Kanap.avif);
   background-size:cover;
   background-repeat: no-repeat;
 }
@@ -544,8 +547,6 @@ hr{
 
 #footer{
   background: #51acc0;
-  color: black;
-  width: 100%;
   text-align: center;
   padding: 20px 0px 20px 0px;
 }
