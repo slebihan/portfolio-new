@@ -42,7 +42,7 @@ const main = document.getElementById('main')
 const background = document.querySelector('.back-container')
 
 var x = window.matchMedia("(min-width: 768px)")
-// var y = window.matchMedia("(max-width:992px)")
+var y = window.matchMedia("(max-width:992px)")
 
 elements.addEventListener('click', function(){
     element.forEach((element)=>{
