@@ -5,314 +5,371 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon.ico" />
-    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <title>Portfolio</title>
     <meta
-    name="description"
-    content="En recherche active à Paris (junior) - Poste de développeur ou intégrateur  "
-  />
+      name="description"
+      content="En recherche active à Paris (junior) - Poste de développeuse ou intégrateur"
+    />
   </head>
   <body>
-    <!-- <header class="spinner-bg">
-      <div class="circle-spinner">
-        <h1>Loading</h1>
-      </div>
-    </header> -->
-
     <header>
       <div id="background">
-
         <div class="back-container">
-        <div class="logo">
-          <picture>
-      
-            
-            <source srcset="images/Lotus-Flower-200w.png"
-                    media="(min-width: 768px)">
-          
-                    
-            <img src="images/Lotus-Flower-100w.png" alt="logo-lotus-flower"/> 
-           
-            
-        </picture>
+          <div class="logo">
+            <picture>
+              <source
+                srcset="images/Lotus-Flower-200w.png"
+                media="(min-width: 768px)"
+              />
 
-  
-        </div>
-        <div class="name">
-        <h1>Stéphanie Le Bihan</h1>
-        </div>
+              <img src="images/Lotus-Flower-100w.png" alt="logo-lotus-flower" />
+            </picture>
+          </div>
+          <div class="name">
+            <h1>Stéphanie Le Bihan</h1>
+          </div>
         </div>
 
-      <div class="ellipse"></div>
+        <div class="ellipse"></div>
       </div>
-  
+
+      <nav>
+        <div class="btn-navigation">
+          <div class="barre"></div>
+          <div class="barre"></div>
+          <div class="barre"></div>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+              </a>
+              <a href="./competences.html">Compétences</a>
+              <a href="./portfolio.html">Portfolio</a>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <!-- <div class="circle-menu">
-      <div class="links-circle">
-        <a href="./contact.html">
-          <i class="fa-solid fa-phone"></i>
-        </a>
+    <main id="main">
+     
+        <div class="description">
+        <h2>
+          Pour en savoir plus sur les projets, n'hésitez pas à me contacter ! 🍀
+        </h2>
+        <hr />
       </div>
-      <div class="links-circle">
-        <a href="./portfolio.html">
-          <i class="fa-solid fa-folder-open"></i>
-        </a>
-      </div>
-      <div class="links-circle">
-        <a href="./index.html">
-          <i class="fa-solid fa-user-graduate"></i>
-        </a>
-      </div>
-    </div> -->
-    <div class="btn-navigation">
-      <div class="barre"></div>
-      <div class="barre"></div>
-      <div class="barre"></div>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="./index.html">
-            <i class="fa-solid fa-house"></i>
-          </a>
-          <a href="./competences.html">Compétences</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
+      
 
-    <div id="main">
-      <div class="description">
-        <h2>Pour en savoir plus sur les projets, n'hésitez pas à me contacter ! 🍀</h2>
-        <hr>
-      </div>
-      <div class="item-project">
+      <section id="project">
         <div class="flex-container">
- 
-          <div class="image-box">
-            <div id="ohmyfood">
-              
-            </div>
+
+          <div class="item-project" id="ohmyfood">
+            <div class="img-box"></div>
             <div class="overlay">
               <div class="text">
                 <h2>OhMyFood</h2>
-                <p> Réalisation d'un site proposant le menu de 4 restaurants parisiens </p>
+                <p>
+                  Réalisation d'un site proposant le menu de 4 restaurants
+                  parisiens
+                </p>
                 <ul class="infos">
-                <li>Technologies utilisées : HTML / CSS / SCSS </li>
+                  <li>Technologies utilisées : HTML / CSS / SCSS</li>
                 </ul>
-                <button onclick="document.location='ohmyfood.html'" class="modal-button-mobile">Voir plus d'images</button>
-                <button class="modal-button-large" href="#myModal1">Voir plus d'images</button>
+                <button
+                  onclick="document.location='ohmyfood.html'"
+                  class="modal-button-mobile"
+                >
+                  Voir plus d'images
+                </button>
+                <a class="modal-button-large" href="#myModal1">
+                  Voir plus d'images
+                </a>
                 <div id="myModal1" class="modal">
                   <div class="modal-content">
                     <div class="modal-content-text">
                       <ul class="carousel-items">
-                      <li class="carousel-item">
-                        <a href="./images/ohmyfood-1.avif" target="_blank">
-                          <img src="./images/ohmyfood-1-min.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/ohmyfood-2.avif" target="_blank">
-                          <img src="./images/ohmyfood-2-min.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/ohmyfood-3-min.avif" target="_blank">
-                          <img src="./images/ohmyfood-3-min.avif"  alt="">
-                        </a>
-                      </li>
+                        <li class="carousel-item">
+                          <a href="./images/ohmyfood-1.avif" target="_blank">
+                            <img
+                              src="./images/ohmyfood-1-min.avif"
+                              alt="photo-1-ohmyfood"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a href="./images/ohmyfood-2.avif" target="_blank">
+                            <img
+                              src="./images/ohmyfood-2-min.avif"
+                              alt="photo-2-ohmyfood"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a
+                            href="./images/ohmyfood-3-min.avif"
+                            target="_blank"
+                          >
+                            <img
+                              src="./images/ohmyfood-3-min.avif"
+                              alt="photo-3-ohmyfood"
+                            />
+                          </a>
+                        </li>
                       </ul>
                     </div>
-                  <span class="close">&times</span>
+                    <span class="close">&times;</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          
-          <div class="image-box">
-            <div id="booki">
-             
-            </div>
-            <div class="overlay">
-              <div class="text">
-                <h2>Booki</h2>
-                <p>Intégration de la maquette d'un site web en HTML / CSS</p>
-                <ul class="infos">
-                <li>Technologies utilisées : HTML / CSS / SCSS</li>
-                <li>La page doit être responsive sur mobile, tablette, desktop</li>
-                </ul>
-                <button onclick="document.location='booki.html'" class="modal-button-mobile">Voir plus d'images</button>
-                <button class="modal-button-large" href="#myModal2">Voir plus d'images</button>
-                <div id="myModal2" class="modal">
-                  <div class="modal-content">
-                    <div class="modal-content-text">
-                      <ul class="carousel-items">
-                      <li class="carousel-item">
-                        <a href="./images/booki-1.avif" target="_blank">
-                          <img src="./images/booki-1.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/booki-2.avif" target="_blank">
-                          <img src="./images/booki-2.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/booki-mobile-2.avif" target="_blank">
-                          <img src="./images/booki-mobile-2.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/booki-mobile-1.avif" target="_blank">
-                          <img src="./images/booki-mobile-1.avif"  alt="">
-                        </a>
-                      </li>
-          
-                      </ul>
-        
-                    </div>
-                  <span class="close">&times</span>
-                  </div>
-                </div>
-              </div>
-              
-
-            </div>
-          </div>
-
-    
-          <div class="image-box">
-            <div id="groupomania">
-            </div>
+          <div class="item-project" id="groupomania">
+            <div class="img-box"></div>
             <div class="overlay">
               <div class="text">
                 <h2>Groupomania</h2>
                 <p>Réalisation d'un réseau social d'entreprise</p>
                 <ul class="infos">
-                  <li>Technologies utilisées : HTML / CSS / SCSS </li>
-                  <li> Framework  : React</li>
-                  <li> Base de données MySQL</li>
-                  <li> Javascript - Api Rest - NodeJS</li>
+                  <li>Technologies utilisées : HTML / CSS / SCSS</li>
+                  <li>Framework : React</li>
+                  <li>Base de données MySQL</li>
+                  <li>Javascript - Api Rest - NodeJS</li>
                 </ul>
-                <button onclick="document.location='groupomania.html'" class="modal-button-mobile">Voir plus d'images</button>
-                <button class="modal-button-large" href="#myModal3">Voir plus d'images</button>
+                <a
+                  onclick="document.location='groupomania.html'"
+                  class="modal-button-mobile"
+                >
+                  Voir plus d'images
+                </a>
+                <a class="modal-button-large" href="#myModal3">
+                  Voir plus d'images
+                </a>
                 <div id="myModal3" class="modal">
                   <div class="modal-content">
                     <div class="modal-content-text">
                       <ul class="carousel-items">
-                      <li class="carousel-item">
-                        <a href="./images/groupomania-1.avif" target="_blank">
-                          <img src="./images/groupomania-1.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/groupomania-2.avif" target="_blank">
-                          <img src="./images/groupomania-2.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/groupomania-3.avif" target="_blank">
-                          <img src="./images/groupomania-3.avif"  alt="">
-                        </a>
-                      </li>
+                        <li class="carousel-item">
+                          <a href="./images/groupomania-1.avif" target="_blank">
+                            <img
+                              src="./images/groupomania-1.avif"
+                              alt="photo-1-groupomania"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a href="./images/groupomania-2.avif" target="_blank">
+                            <img
+                              src="./images/groupomania-2.avif"
+                              alt="photo-2-groupomania"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a href="./images/groupomania-3.avif" target="_blank">
+                            <img
+                              src="./images/groupomania-3.avif"
+                              alt="photo-3-groupomania"
+                            />
+                          </a>
+                        </li>
                       </ul>
-                 
                     </div>
-                  <span class="close">&times</span>
+                    <span class="close">&times;</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-   
-          <div class="image-box">
-            <div id="kanap">
-              <!-- <img class="mySlides" src="./_Users_stephanielebihan_Documents_OpenClassRoom_LeBihanStephanie_3_16112021_Lanoteenchantee.html (2).png" alt=""> -->
-            </div>
+          <div class="item-project" id="kanap">
+            <div class="img-box"></div>
             <div class="overlay">
               <div class="text">
                 <h2>Kanap</h2>
-                <p>Réalisation de la partie front-end Javascript du site e-commerce Kanap </p>
+                <p>
+                  Réalisation de la partie front-end Javascript du site
+                  e-commerce Kanap
+                </p>
                 <ul class="infos">
-                  <li>Technologies utilisées : Javascript - NodeJS - Express </li>
+                  <li>
+                    Technologies utilisées : Javascript - NodeJS - Express
+                  </li>
                 </ul>
-                <button onclick="document.location='kanap.html'" class="modal-button-mobile">Voir plus d'images</button>
-                <button class="modal-button-large" href="#myModal4">Voir plus d'images</button>
+                <a
+                  onclick="document.location='kanap.html'"
+                  class="modal-button-mobile"
+                >
+                  Voir plus d'images
+                </a>
+                <a class="modal-button-large" href="#myModal4">
+                  Voir plus d'images
+                </a>
                 <div id="myModal4" class="modal">
                   <div class="modal-content">
                     <div class="modal-content-text">
                       <ul class="carousel-items">
-                      <li class="carousel-item">
-                        <a href="./images/Kanap-1.avif" target="_blank">
-                          <img src="./images/Kanap-1.avif"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/Kanap-2.avif" target="_blank">
-                          <img src="./images/Kanap-2.avif"  alt="">
-                        </a>
-                      </li>
+                        <li class="carousel-item">
+                          <a href="./images/Kanap-1.avif" target="_blank">
+                            <img
+                              src="./images/Kanap-1.avif"
+                              alt="photo-1-kanap"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a href="./images/Kanap-2.avif" target="_blank">
+                            <img
+                              src="./images/Kanap-2.avif"
+                              alt="photo-2-kanap"
+                            />
+                          </a>
+                        </li>
                       </ul>
-                  
                     </div>
-                  <span class="close">&times</span>
+                    <span class="close">&times;</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="image-box">
-            <div id="piiquante">
-          
+          <div class="item-project" id="booki">
+            <div class="img-box"></div>
+            <div class="overlay">
+              <div class="text">
+                <h2>Booki</h2>
+                <p>Intégration de la maquette d'un site web en HTML / CSS</p>
+                <ul class="infos">
+                  <li>Technologies utilisées : HTML / CSS / SCSS</li>
+                  <li>
+                    La page doit être responsive sur mobile, tablette, desktop
+                  </li>
+                </ul>
+                <a
+                  onclick="document.location='booki.html'"
+                  class="modal-button-mobile"
+                >
+                  Voir plus d'images
+                </a>
+                <a class="modal-button-large" href="#myModal2">
+                  Voir plus d'images
+                </a>
+                <div id="myModal2" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-content-text">
+                      <ul class="carousel-items">
+                        <li class="carousel-item">
+                          <a href="./images/booki-1.avif" target="_blank">
+                            <img
+                              src="./images/booki-1.avif"
+                              alt="photo-1-booki"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a href="./images/booki-2.avif" target="_blank">
+                            <img
+                              src="./images/booki-2.avif"
+                              alt="photo-2-booki"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a
+                            href="./images/booki-mobile-2.avif"
+                            target="_blank"
+                          >
+                            <img
+                              src="./images/booki-mobile-2.avif"
+                              alt="photo-mobile-2-booki"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a
+                            href="./images/booki-mobile-1.avif"
+                            target="_blank"
+                          >
+                            <img
+                              src="./images/booki-mobile-1.avif"
+                              alt="photo-mobile-1-booki"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="item-project" id="piiquante">
+            <div class="img-box"></div>
             <div class="overlay">
               <div class="text">
                 <h2>Piiquante</h2>
-                <p>Construction d'une API sécurisée pour une application d'avis gastronomiques</p>
+                <p>
+                  Construction d'une API sécurisée pour une application d'avis
+                  gastronomiques
+                </p>
                 <ul class="infos">
-                  <li>Technologies utilisées : Javascript - NodeJS - Express </li>
-                  <li> Base de données MongoDB</li>
+                  <li>
+                    Technologies utilisées : Javascript - NodeJS - Express
+                  </li>
+                  <li>Base de données MongoDB</li>
                 </ul>
-                <button onclick="document.location='piiquante.html'" class="modal-button-mobile">Voir plus d'images</button>
-                <button class="modal-button-large" href="#myModal5">Voir plus d'images</button>
+                <a
+                  onclick="document.location='piiquante.html'"
+                  class="modal-button-mobile"
+                >
+                  Voir plus d'images
+                </a>
+                <a class="modal-button-large" href="#myModal5">
+                  Voir plus d'images
+                </a>
                 <div id="myModal5" class="modal">
                   <div class="modal-content">
                     <div class="modal-content-text">
                       <ul class="carousel-items">
-                      <li class="carousel-item">
-                        <a href="./images/piiquante.png" target="_blank">
-                          <img src="./images/piiquante.png"  alt="">
-                        </a>
-                      </li>
-                      <li class="carousel-item">
-                        <a href="./images/piiquante-2.png" target="_blank">
-                          <img src="./images/piiquante-2.png"  alt="">
-                        </a>
-                      </li>
-                
+                        <li class="carousel-item">
+                          <a href="./images/piiquante.png" target="_blank">
+                            <img
+                              src="./images/piiquante.png"
+                              alt="photo-1-piiquante"
+                            />
+                          </a>
+                        </li>
+                        <li class="carousel-item">
+                          <a href="./images/piiquante-2.png" target="_blank">
+                            <img
+                              src="./images/piiquante-2.png"
+                              alt="photo-2-piiquante"
+                            />
+                          </a>
+                        </li>
                       </ul>
-              
                     </div>
-                  <span class="close">&times</span>
+                    <span class="close">&times;</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-      </div>
-    </div>
+      </section>
+    </main>
     <!-- footer Section -->
     <footer id="footer">
       <div class="footer-container">

@@ -70,7 +70,7 @@ elements.addEventListener('click', function(){
 var mobile = window.matchMedia("(min-width: 768px)");
 
 // Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button-large");
+var btn = document.querySelectorAll(".modal-button-large");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');

@@ -51,7 +51,9 @@ body {
 ul {
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -76,11 +78,6 @@ table {
   position: fixed;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
-  /* animation: open-bg 2s linear;
-    animation-fill-mode: forwards;
-    animation-delay: 2s; */
-
-
 }
 
 #anim-2 {
@@ -93,9 +90,6 @@ table {
   position: fixed;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
   clip-path: polygon(0 100%, 0 0, 100% 0);
-  /* animation: open-bg-1 2s linear;
-    animation-delay: 2s;
-    animation-fill-mode: forwards; */
 
 }
 
@@ -172,6 +166,7 @@ h1{
 /* END HEADER */
 
 /* MENU */
+
 
 #main {
   transition: all 0.3s ease;
@@ -288,10 +283,6 @@ h1{
   justify-content: space-evenly;
 }
 
-ul li a {
-  text-decoration: none;
-}
-
 .navigation ul li a {
   color: white;
   text-transform: uppercase;
@@ -302,57 +293,6 @@ ul li a {
   text-align: center;
 }
 /* END MENU TABLETTE DESKTOP */
-
-/* MENU MOBILE V1 */
-
-/* .circle-menu {
-  background: #44749a;
-  width: 200px;
-  height: 200px;
-  position: fixed;
-  border-radius: 50%;
-  z-index: 900;
-  border: 70px solid rgba(255, 255, 255, 0.239);
-  top: 10%;
-  left: 0px;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.2s ease 0.3s;
-}
-
-.circle-menu.circle-anim {
-  transition: transform 0.2s ease 0.3s;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.links-circle i {
-  color: black;
-}
-
-.links-circle a:focus i,
-.links-circle a:hover i {
-  color: white;
-}
-
-.links-circle {
-  font-size: 30px;
-  position: absolute;
-  left: 60%;
-  top: 100%;
-}
-
-.links-circle:nth-child(2) {
-  font-size: 30px;
-  position: absolute;
-  left: 110%;
-  top: 40%;
-}
-
-.links-circle:nth-child(3) {
-  left: 100%;
-  top: 150px;
-} */
-
-/* END MENU MOBILE V1 */
 
 /* FOOTER */
 

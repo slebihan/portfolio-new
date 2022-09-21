@@ -38,9 +38,6 @@ nav,
 section {
     display: block;
 }
-html{
-    height: 100%;
-}
 body {
     background: #faebd7;
     margin: 0px;
@@ -53,7 +50,9 @@ body {
 ul {
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+  }
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -130,9 +129,6 @@ h1 {
     width: 80%;
     row-gap: 30px;
 }
-
-
-
 
 #main {
     display: flex;
@@ -266,63 +262,13 @@ h1 {
     color: white;
     text-transform: uppercase;
     margin: 20px 0;
-    text-decoration: none;
     font-size: 20px;
     letter-spacing: 0.07em;
     font-weight: 800;
     text-align: center;
   }
 
-/* MENU MOBILE V1 */
 
-/* .circle-menu {
-  background: #44749a;
-  width: 200px;
-  height: 200px;
-  position: fixed;
-  border-radius: 50%;
-  z-index: 900;
-  border: 70px solid rgba(255, 255, 255, 0.239);
-  top: 10%;
-  left: 0px;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.2s ease 0.3s;
-}
-
-.circle-menu.circle-anim {
-  transition: transform 0.2s ease 0.3s;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.links-circle i {
-  color: black;
-}
-
-.links-circle a:focus i,
-.links-circle a:hover i {
-  color: white;
-}
-
-.links-circle {
-  font-size: 30px;
-  position: absolute;
-  left: 60%;
-  top: 100%;
-}
-
-.links-circle:nth-child(2) {
-  font-size: 30px;
-  position: absolute;
-  left: 110%;
-  top: 40%;
-}
-
-.links-circle:nth-child(3) {
-  left: 100%;
-  top: 150px;
-} */
-
-/* END MENU MOBILE V1 */
 
 /* FOOTER */
 
@@ -390,10 +336,6 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-
-    /* .circle-menu.circle-anim{
-      display: none;
-    } */
 
     .navigation.isOpen {
         display: block;
