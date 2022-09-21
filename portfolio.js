@@ -1,39 +1,3 @@
-// $(document).ready(function(){
-//     $('.btn-navigation').click(function(){
-//         $(this).find('.barre').toggleClass('white')
-//        $('.navigation').toggleClass('isOpen')
-//     });
-// });
-
-
-
-//   let slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slides[slideIndex-1].style.display = "block";
-
-// }
-
-
 
 var elements = document.querySelector('.btn-navigation');
 var element = document.querySelectorAll('.barre')
@@ -60,25 +24,16 @@ elements.addEventListener('click', function(){
     })
 })
 
-
-//  window.onresize = function() {    
-//         var widthWin = window.document.body.clientWidth;
-//         console.log(widthWin); 
-                
-//     }
-
 var mobile = window.matchMedia("(min-width: 768px)");
 
-// Get the button that opens the modal
+
 var btn = document.querySelectorAll(".modal-button-large");
 
-// All page modals
 var modals = document.querySelectorAll('.modal');
 
-// Get the <span> element that closes the modal
+
 var spans = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal
 for (var i = 0; i < btn.length; i++) {
  btn[i].onclick = function(e) {
     const modal = document.querySelector(e.target.getAttribute("href"));
@@ -93,7 +48,6 @@ for (var i = 0; i < btn.length; i++) {
  }
 }
 
-// When the user clicks on <span> (x), close the modal
 for (var i = 0; i < spans.length; i++) {
  spans[i].onclick = function() {
     for (var index in modals) {
@@ -102,19 +56,12 @@ for (var i = 0; i < spans.length; i++) {
  }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-     }
+window.onclick= function (e) {
+    if (e.target.classList.contains('modal')) {
+       for(let i in modals){
+        if (typeof modals[i].style !== 'undefined') modals[i].style.display = "none";
+       };
     }
-}
+};
 
 
-
-// elements.addEventListener('click',()=>{
-//     if(x.matches){
-//     circleMenu.classList.toggle('circle-anim')
-//     }
-// })
