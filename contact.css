@@ -5,29 +5,14 @@
     src: url(./fonts/Saithik-Handwritten.ttf);
   }
  
-menu,nav,output,ruby,section,summary,time,mark,audio,video{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font:inherit;
-    vertical-align: baseline;
-
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
-    display: block;
-}
-html,body{
-  height: 100%;
-}
 body {
     background: #faebd7;
     margin: 0px;
     font-family: "Comfortaa";
     display: flex;
     flex-direction: column;
-}
+    height: 100vh;
+  }
 ul{
     list-style: none;
 }

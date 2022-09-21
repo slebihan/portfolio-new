@@ -5,43 +5,6 @@
   src: url(./fonts/Saithik-Handwritten.ttf);
 }
 
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  width: 100%;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
 body {
   background: #faebd7;
   margin: 0px;
@@ -54,7 +17,9 @@ body {
 ul {
   list-style: disc;
 }
-
+a {
+  text-decoration: none;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -242,6 +207,10 @@ hr {
   border-top: 2px solid black;
 }
 
+section#project{
+  width: 100%;
+}
+
 .flex-container {
   display: grid;
   flex-wrap: wrap;
@@ -360,7 +329,7 @@ hr {
 /* Modal Content/Box */
 .modal-content {
   display: inline-flex;
-  background-color: #fefefe;
+  background-color: antiquewhite;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
