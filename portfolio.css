@@ -265,6 +265,10 @@ section#project{
   background-image: url(./images/booki.png);
 }
 
+#la-maison-jungle .img-box {
+  background-image: url(./images/lamaisonjungle.png);
+}
+
 #ohmyfood .img-box {
   background-image: url(./images/ohmyfood.png);
 }
