@@ -6,7 +6,6 @@ const main = document.getElementById('main')
 const background = document.querySelector('.back-container')
 
 var x = window.matchMedia("(min-width: 768px)")
-var y = window.matchMedia("(max-width:992px)")
 
 elements.addEventListener('click', function(){
     element.forEach((element)=>{
@@ -15,7 +14,7 @@ elements.addEventListener('click', function(){
         element.classList.toggle('black')
         elementNav.classList.toggle('isOpen')
 
-        if(x.matches && y.matches){
+        if(x.matches){
             main.classList.toggle('marginLeft')
             background.classList.toggle('marginLeftBack')
         }
