@@ -410,7 +410,7 @@ section#project{
   .flex-container {
     width: 100%;
   }
-  .modal-button-large {
+  .modal-button-large,#lmj.modal-button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -486,7 +486,7 @@ section#project{
     display: none;
   }
 
-  .modal-button-mobile {
+  .modal-button-mobile,#lmj.modal-button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
