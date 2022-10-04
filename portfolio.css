@@ -276,6 +276,9 @@ section#project{
 #piiquante .img-box {
   background-image: url(./images/piiquante-resize.png);
 }
+#tic-tac-toe{
+  background: no-repeat center/80% url(./images/testtictactoe.png);
+}
 
 .overlay {
   text-align: center;
@@ -410,7 +413,8 @@ section#project{
   .flex-container {
     width: 100%;
   }
-  .modal-button-large,#lmj.modal-button {
+  .modal-button-large,#web
+  .modal-button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -486,7 +490,7 @@ section#project{
     display: none;
   }
 
-  .modal-button-mobile,#lmj.modal-button {
+  .modal-button-mobile,#web.modal-button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
