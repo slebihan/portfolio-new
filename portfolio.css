@@ -413,8 +413,7 @@ section#project{
   .flex-container {
     width: 100%;
   }
-  .modal-button-large,#web
-  .modal-button {
+  .modal-button-large,#web.modal-button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
