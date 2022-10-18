@@ -200,17 +200,23 @@ h1 {
 /* END MENU TABLETTE DESKTOP */
 
 #frontend {
-  animation: fadeInLeft 2s ease;
-  transition: all 1s;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+
 }
 
 #backend {
-  animation: fadeInRight 2s ease;
-  transition: all 1s;
+  animation-name: fadeInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+
 }
 #environnement {
-  animation: fadeInLeft 2s ease;
-  transition: all 1s;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+
 }
 
 #competences {
