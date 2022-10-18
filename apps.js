@@ -2,7 +2,9 @@
 var elements = document.querySelector(".btn-navigation");
 var element = document.querySelectorAll(".barre");
 var elementNav = document.querySelector(".navigation");
-const competences = document.getElementById("competences");
+const frontend = document.getElementById("frontend");
+const backend = document.getElementById('backend')
+const environnement = document.getElementById('environnement')
 const background = document.querySelector(".back-container");
 
 var x = window.matchMedia("(min-width: 768px)");
@@ -15,7 +17,9 @@ elements.addEventListener("click", function () {
     elementNav.classList.toggle("isOpen");
 
     if (x.matches && y.matches) {
-      competences.classList.toggle("marginLeft");
+      frontend.classList.toggle("marginLeft");
+      backend.classList.toggle("marginLeft");
+      environnement.classList.toggle("marginLeft");
       background.classList.toggle("marginLeftBack");
     }
   });
