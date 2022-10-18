@@ -15,8 +15,6 @@ function animation() {
 var element = document.querySelectorAll('.barre')
 var elementNav = document.querySelector(".navigation")
 const background = document.querySelector('.back-container')
-// const circleMenu = document.querySelector('.circle-menu')
-// const circleAnim = document.querySelector('.circle-anim')
 
 var x = window.matchMedia("(min-width: 768px)")
 var y = window.matchMedia("(max-width:992px)")
