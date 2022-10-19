@@ -9,8 +9,6 @@ body {
   background: #faebd7;
   margin: 0px;
   font-family: "Comfortaa";
-  display: flex;
-  flex-direction: column;
 }
 
 a {
@@ -72,7 +70,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 
@@ -200,23 +198,19 @@ h1 {
 /* END MENU TABLETTE DESKTOP */
 
 #frontend {
-  animation-name: fadeInLeft;
-  animation-duration: 2s;
-  animation-fill-mode: both;
+  animation: fadeInRight 1s ease;
+  transition: all 0.5s ease;
 
 }
 
 #backend {
-  animation-name: fadeInRight;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-
+  animation: fadeInLeft 1s ease;
+  transition: all 0.5s ease;
 }
 #environnement {
-  animation-name: fadeInLeft;
-  animation-duration: 2s;
-  animation-fill-mode: both;
 
+  animation: fadeInRight 1s ease;
+  transition: all 0.5s ease;
 }
 
 #competences {
@@ -302,10 +296,12 @@ h3 {
 
 /* FOOTER */
 
-#footer {
+footer {
   background: #51acc0;
   text-align: center;
   padding: 20px 0px 20px 0px;
+  position: relative;
+  width: 100%;
 }
 
 /* END FOOTER */
